@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Website project for SDS: Front-End",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/aholainenviivi/software-development-skills-front-end.git"
+  },
+  "author": "aholainenviivi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/aholainenviivi/software-development-skills-front-end/issues"
+  },
+  "homepage": "https://gitlab.com/aholainenviivi/software-development-skills-front-end#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
