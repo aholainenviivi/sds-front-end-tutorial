@@ -1,0 +1,33 @@
+// Menu button
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    @include iconTransition();
+
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: $primary-color;
+        @include iconTransition();
+    }
+
+    &.close {
+        transform: rotate(90deg);
+        
+        .btn-line {
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(6.5px, -6.5px);
+            }
+        }
+    }
+}
