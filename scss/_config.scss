@@ -4,8 +4,9 @@ $accent-color: #c55252;
 $show-home-img: true;
 $home-img: url(../img/background.jpg);
 $background-opacity: 0.8;
+$portrait-img: url(../img/portrait.png);
 
-@mixin iconTransition {
+@mixin myTransition {
     transition: all 0.2s ease-out;
 }
 
@@ -27,5 +28,29 @@ $background-opacity: 0.8;
                 background: rgba($background-color, $background-opacity);
             }
         }
+    }
+}
+
+@mixin mediaSmall {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMedium {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLarge {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXLarge {
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }

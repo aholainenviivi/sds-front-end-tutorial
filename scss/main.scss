@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
     box-sizing: border-box;
@@ -52,8 +53,7 @@ main {
     .icons {
         margin-top: 2.5rem;
         padding-left: 1rem;
-        background: rgba(darken($background-color, 2.5), 0.5);
-
+        background: rgba(darken($background-color, 5), 0.5);
         margin-right: -5rem;
 
         a {
@@ -61,7 +61,7 @@ main {
 
             &:hover {
                 color: $accent-color;
-                @include iconTransition();
+                @include myTransition;
             }
         }
     }
