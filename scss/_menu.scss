@@ -10,7 +10,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: $primary-color;
+        background: setTextColor($background-color);
         @include myTransition();
     }
 
@@ -106,6 +106,7 @@
         text-transform: uppercase;
         padding: 0.5rem 0;
         font-weight: 600;
+        color: setTextColor($background-color);
         text-decoration: none;
         @include myTransition;
 

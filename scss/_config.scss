@@ -1,15 +1,21 @@
+// Colors
 $background-color: #434343;
+// $background-color: #dcdbdb;
 $primary-color: #dcdbdb;
 $accent-color: #c55252;
+
+// Home page background
 $show-home-img: true;
 $home-img: url(../img/background.jpg);
 $background-opacity: 0.8;
 $portrait-img: url(../img/portrait.png);
 
+// Transition
 @mixin myTransition {
     transition: all 0.2s ease-out;
 }
 
+// Background
 @mixin background {
     @if $show-home-img {
         &#background-img {
@@ -31,6 +37,16 @@ $portrait-img: url(../img/portrait.png);
     }
 }
 
+// Set text color
+@function setTextColor($color) {
+    @if (lightness($color) > 40) {
+        @return #393939;
+    } @else {
+        @return $primary-color;
+    }
+}
+
+// Responsiveness to display width
 @mixin mediaSmall {
     @media screen and (max-width: 500px) {
         @content;
