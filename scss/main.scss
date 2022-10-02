@@ -163,7 +163,8 @@ main {
             span {
                 color: setTextColor($accent-color);
                 font-weight: bolder;
-            }
+            }    @include myTransition();
+
         }
     }
 }
