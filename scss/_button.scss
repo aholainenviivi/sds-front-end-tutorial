@@ -1,0 +1,23 @@
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+        background-color: $accent-color;
+        color: setTextColor($accent-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($background-color, 20);
+    color: setTextColor(darken($background-color, 20));
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($background-color, 40);
+    color: setTextColor(lighten($background-color, 40));
+}
