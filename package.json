@@ -4,7 +4,8 @@
   "description": "Website project for SDS: Front-End",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,9 @@
   "bugs": {
     "url": "https://gitlab.com/aholainenviivi/software-development-skills-front-end/issues"
   },
-  "homepage": "https://gitlab.com/aholainenviivi/software-development-skills-front-end#readme",
+  "homepage": "https://aholainenviivi.github.io/sds-front-end-tutorial",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1"
   }
 }
